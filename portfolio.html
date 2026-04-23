@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Aaron Mutisya | Portfolio</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --accent: #2c7da0;
+            --accent-hover: #1f5e7a;
+            --card-bg: #f8f9fa;
+            --border: #e0e0e0;
+            --button-bg: #2c7da0;
+            --button-text: white;
+            --footer-bg: #f1f3f5;
+        }
+        body.dark {
+            --bg: #0d1117;
+            --text: #e6edf3;
+            --text-secondary: #b0b8c5;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --card-bg: #161b22;
+            --border: #30363d;
+            --button-bg: #238636;
+            --button-text: white;
+            --footer-bg: #161b22;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            transition: background 0.2s, color 0.2s;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .theme-toggle {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 1rem;
+        }
+        .theme-toggle button {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 2rem;
+            padding: 0.4rem 0.8rem;
+            cursor: pointer;
+            font-size: 1rem;
+            color: var(--text);
+            background: var(--card-bg);
+        }
+        .theme-toggle button:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+        .header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .header h1 { font-size: 2rem; }
+        .back-link {
+            margin-bottom: 1rem;
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .section { margin-bottom: 2.5rem; }
+        .section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+        .card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--accent); }
+        .btn {
+            display: inline-block;
+            background: var(--button-bg);
+            color: var(--button-text);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            margin-top: 0.75rem;
+            margin-right: 0.5rem;
+        }
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="theme-toggle">
+        <button id="themeToggle">🌓 Dark/Light</button>
+    </div>
+    <div class="header">
+        <a href="index.html" class="back-link">← Back to profile</a>
+        <h1>Portfolio</h1>
+        <p style="color: var(--text-secondary); margin-top: 0.5rem;">Sample work demonstrating my capabilities. All templates are ready to adapt for your business.</p>
+    </div>
+
+    <div class="section">
+        <h2>AI & Automation</h2>
+        <div class="card">
+            <h3>🤖 Prompt Vault</h3>
+            <p>AI-powered content strategy system built solo with $0 budget. Tested across 9 LLM platforms (ChatGPT, Claude, Gemini, DeepSeek, Qwen, Grok, Kimi, MiMo). 5 pricing tiers, 7 niches. Demonstrates multi-LLM workflow orchestration, product strategy, and rapid execution.</p>
+            <a href="https://promptvaultofficial.gumroad.com" class="btn" target="_blank">View on Gumroad →</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Process & Documentation</h2>
+        <div class="card">
+            <h3>📄 Client Onboarding Kit</h3>
+            <p>A complete onboarding template including welcome email, intake form, and SOP for client setup. Demonstrates my ability to systematise client relationships.</p>
+            <a href="#" id="onboardingLink" class="btn" target="_blank">View Template →</a>
+        </div>
+        <div class="card">
+            <h3>📧 Email Outreach Sequence</h3>
+            <p>A 3-email re-engagement sequence for past clients, with subject lines, body copy, and follow-up tracking. Shows my communication and client retention approach.</p>
+            <a href="#" id="emailLink" class="btn" target="_blank">View Sequence →</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Project Management & Tracking</h2>
+        <div class="card">
+            <h3>📊 Simple Task Tracker</h3>
+            <p>A clean, ready-to-use task list with status tracking and a quick summary of what's done, in progress, and blocked. Perfect if you just need something that works. No setup, no fuss.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1bIO3JzZZJOnfb9zyvUKuKI_xDJddGgaVRIm0M5ljFOM/edit?usp=sharing" class="btn" target="_blank">View in Google Sheets →</a>
+        </div>
+        <div class="card">
+            <h3>📊 Project Tracker Dashboard</h3>
+            <p>A full project dashboard that thinks for you. Add your tasks and it automatically shows your top priorities, what's coming up next, and what's already late, including exactly how many days overdue. No formulas to learn, no manual updates. Just add tasks and the dashboard does the rest.</p>
+            <p style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">Built natively for each platform, so everything runs smoothly.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1Q91p17mr1we902oqhdaLJrEExFwKiBvpnyZUkz-c4V0/edit?usp=sharing" class="btn" target="_blank">🟢 Google Sheets version</a>
+            <a href="https://drive.google.com/uc?export=download&id=1ugw_16a7gBEcygaHI3jh9hgwmNuYYp8W" class="btn" target="_blank">📥 Excel version</a>
+        </div>
+        <div class="card">
+            <h3>⚙️ Process Improvement Case Study</h3>
+            <p>A narrative example of how I reduced document turnaround time by 50% through SOP creation and workflow automation. Demonstrates my analytical and optimisation skills.</p>
+            <a href="#" id="caseStudyLink" class="btn" target="_blank">Read Case Study →</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Aaron Mutisya – Remote Operations & Client Experience
+    </div>
+</div>
+
+<script>
+    // Theme toggle (same as index)
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') document.body.classList.add('dark');
+    themeToggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Portfolio links - replace [DRIVE_LINK] with actual Google Drive shareable URLs
+    document.getElementById('onboardingLink').href = "https://docs.google.com/document/d/1Q6GBrhQsrlGqt0tHTCWiTVb8nv3FENNg/edit?usp=sharing";
+    document.getElementById('emailLink').href = "https://docs.google.com/document/d/1a77voLuDLCAqNjTCyhbu7MM5WvFLFpA1/edit?usp=sharing";
+    document.getElementById('caseStudyLink').href = "https://docs.google.com/document/d/1gSAZe0bl70jcQV6I7ip6XT22PF5q0GPE/edit?usp=sharing";
+</script>
+</body>
+</html>

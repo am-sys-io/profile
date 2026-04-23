@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Aaron Mutisya | Remote Operations & Client Experience</title>
+    <meta name="description" content="Remote operations and client experience professional. 100% client satisfaction, <4hr response time. Multi-LLM workflow orchestration across 9 AI platforms. Book a kickoff call.">
+    <meta property="og:title" content="Aaron Mutisya — Remote Operations Professional">
+    <meta property="og:description" content="100% client satisfaction. <4hr response time. Multi-LLM workflow orchestration across 9 AI platforms.">
+    <meta property="og:url" content="https://github.com/am-sys-io/profile">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aaron Mutisya",
+  "jobTitle": "Remote Operations & Client Experience Professional",
+  "url": "https://github.com/am-sys-io/profile",
+  "sameAs": [
+    "https://github.com/am-sys-io",
+    "https://calendly.com/am-sys-io/kickoff",
+    "https://docs.google.com/forms/d/e/1FAIpQLSezAvrTjC5mvPypipcow9OMBgQ7simvio-V2uw0qpieS8fHmg/viewform"
+  ]
+}
+</script>
+    <style>
+        /* CSS Variables for Light/Dark Themes */
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --accent: #2c7da0;
+            --accent-hover: #1f5e7a;
+            --card-bg: #f8f9fa;
+            --border: #e0e0e0;
+            --button-bg: #2c7da0;
+            --button-text: white;
+            --footer-bg: #f1f3f5;
+        }
+        body.dark {
+            --bg: #0d1117;
+            --text: #e6edf3;
+            --text-secondary: #b0b8c5;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --card-bg: #161b22;
+            --border: #30363d;
+            --button-bg: #238636;
+            --button-text: white;
+            --footer-bg: #161b22;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 1rem;
+        }
+        .theme-toggle button {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 2rem;
+            padding: 0.4rem 0.8rem;
+            cursor: pointer;
+            font-size: 1rem;
+            color: var(--text);
+            background: var(--card-bg);
+            transition: all 0.2s;
+        }
+        .theme-toggle button:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.25rem;
+        }
+        .header .tagline {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        .header .location {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        .section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        .bio {
+            font-size: 1.1rem;
+            background: var(--card-bg);
+            padding: 1.2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+        }
+
+        /* Two Column Grid */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        @media (max-width: 700px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent);
+        }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .card li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+        .card li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* Metrics / Achievements */
+        .metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .metric-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            flex: 1 1 180px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .metric-item span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent);
+            display: block;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--button-bg);
+            color: var(--button-text);
+            text-decoration: none;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+        .btn:hover {
+            background: var(--accent-hover);
+            filter: brightness(0.95);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+        }
+        .btn-outline:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: var(--bg);
+            width: 90%;
+            max-width: 600px;
+            border-radius: 16px;
+            padding: 1.5rem;
+            position: relative;
+            border: 1px solid var(--border);
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1.2rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+        .close-modal:hover {
+            color: var(--accent);
+        }
+        .modal iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="theme-toggle">
+        <button id="themeToggle" aria-label="Switch dark/light mode">🌓 Dark/Light</button>
+    </div>
+
+    <div class="header">
+        <h1>Aaron Mutisya</h1>
+        <div class="tagline">Remote Operations & Client Experience Professional</div>
+        <div class="location">Nairobi, Kenya | Available in any timezone – I adapt to your schedule</div>
+    </div>
+
+    <div class="section">
+        <h2>Bio</h2>
+        <div class="bio">
+            I help small businesses, startups, and remote teams run smoothly. I handle client outreach, task tracking, CRM management, document production, social media, and research – so you can focus on growth. I'm proactive, detail-driven, and comfortable working independently across any timezone.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Services & Toolkit</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>📋 Core Services</h3>
+                <ul>
+                    <li>Client outreach & follow‑up tracking (email, LinkedIn, phone)</li>
+                    <li>Calendar & inbox management (Calendly, Google Calendar)</li>
+                    <li>CRM & email marketing support (HubSpot, Mailchimp)</li>
+                    <li>Social media management (scheduling, content creation)</li>
+                    <li>Project coordination & deadline tracking (Trello, Asana, Notion)</li>
+                    <li>Document formatting & report production</li>
+                    <li>Market research & data compilation (Excel/Google Sheets)</li>
+                    <li>Travel booking & expense tracking</li>
+                    <li>Loom walkthrough videos & SOP documentation</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>🛠️ Technical Toolkit</h3>
+                <ul>
+                    <li><strong>AI tools:</strong> Claude, ChatGPT, Gemini, Grok, DeepSeek, Qwen, Kimi, MiMo (Xiaomi), Z.ai — 9 platforms</li>
+                    <li><strong>Productivity:</strong> Notion, Trello, Asana, Google Workspace, MS Office</li>
+                    <li><strong>Communication:</strong> Slack, Zoom, Loom, Microsoft Teams</li>
+                    <li><strong>Design:</strong> Canva</li>
+                    <li><strong>CRM & Data:</strong> HubSpot, ZoomInfo, Excel/Sheets</li>
+                    <li><strong>Development (basic):</strong> Python, HTML/CSS, prompt engineering, API integration</li>
+                    <li><strong>Recently used:</strong> React, Next.js, Convex, Stripe, Cursor (Flash Notes demo)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Key Achievements</h2>
+        <div class="metrics">
+            <div class="metric-item"><span>10+ years</span> freelance VA & operations</div>
+            <div class="metric-item"><span>100%</span> client satisfaction (repeat clients)</div>
+            <div class="metric-item"><span>&lt;4 hrs</span> average task turnaround</div>
+            <div class="metric-item"><span>80%</span> reduction in scheduling friction</div>
+            <div class="metric-item"><span>50%</span> faster document turnaround</div>
+            <div class="metric-item"><span>87%</span> on‑time delivery (40+ projects)</div>
+            <div class="metric-item"><span>20%</span> resource utilisation improvement</div>
+            <div class="metric-item"><span>SOPs</span> authored for audit & record-keeping</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>⭐ Featured Project</h2>
+        <div class="card" style="margin-top:0.5rem;">
+            <h3>Flash Notes – Real‑time Coaching Dashboard</h3>
+            <p>Built in one day to demonstrate my "figure‑it‑out" approach. I had never used React, Next.js, Convex, or Stripe before that morning.</p>
+            <ul style="margin: 0.5rem 0 0 1.2rem;">
+                <li>✅ Live application deployed on Vercel</li>
+                <li>✅ Full stack: Next.js, Convex, Stripe, Cursor</li>
+                <li>✅ Built from scratch, shipped same day</li>
+            </ul>
+            <div class="button-group">
+                <a href="https://coaching-vault.vercel.app" target="_blank" rel="noopener noreferrer" class="btn">🔗 Live Demo</a>
+                <a href="https://github.com/am-sys-io/coaching-vault" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🐙 GitHub Repo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Availability</h2>
+        <div class="card">
+            <p>📅 <strong>Hours/week:</strong> 20–30+ (flexible, can increase)</p>
+            <p>📆 <strong>Days:</strong> Monday–Saturday</p>
+            <p>🌍 <strong>Time zone overlap:</strong> Any – I adapt to your schedule</p>
+            <p>🚀 <strong>Start date:</strong> Immediate</p>
+            <p>🏠 <strong>Setup:</strong> Dedicated home office, backup power, redundant internet</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certifications & Training</h2>
+        <div class="card">
+            <ul>
+                <li>Digital Marketing Certification (HubSpot) – 2026</li>
+                <li>Agile & Predictive Project Management (PMI) – 2026</li>
+                <li>AI Career Essentials (ALX Africa) – 2024</li>
+                <li>Digital Marketing & Virtual Assistant (Ajira Digital) – 2020</li>
+                <li>B.Sc. Engineering (University of Nairobi) – 2014</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Get in Touch</h2>
+        <div class="button-group">
+            <button id="contactModalBtn" class="btn">📬 Contact me</button>
+            <a href="https://calendly.com/am-sys-io/kickoff" class="btn btn-outline" target="_blank">📅 Book a call</a>
+            <a href="https://drive.google.com/file/d/1-3trXRa1YZhPAOGXrYtNbp0lhs2gPG4S/view?usp=sharing" class="btn btn-outline" target="_blank">📄 My CV</a>
+            <a href="portfolio.html" class="btn btn-outline">📁 Portfolio</a>
+            <a href="https://github.com/am-sys-io" class="btn btn-outline" target="_blank">🐙 GitHub</a>
+        </div>
+        <p style="font-size: 0.85rem; margin-top: 0.75rem; color: var(--text-secondary);">I'll respond within 24 hours.</p>
+    </div>
+
+    <div class="footer">
+        © 2026 Aaron Mutisya – Remote Operations & Client Experience<br>
+        Last updated: April 2026
+    </div>
+</div>
+
+<!-- Modal for Google Form -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3 style="margin-bottom: 0.5rem;">Contact Aaron</h3>
+        <p>Fill out this quick form and I'll get back to you.</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezAvrTjC5mvPypipcow9OMBgQ7simvio-V2uw0qpieS8fHmg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+</div>
+
+<script>
+    // Theme Toggle
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark');
+    }
+    themeToggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', theme);
+    });
+
+    // Modal logic
+    const modal = document.getElementById('contactModal');
+    const openModalBtn = document.getElementById('contactModalBtn');
+    const closeModalSpan = document.querySelector('.close-modal');
+
+    openModalBtn.onclick = function() {
+        modal.style.display = 'flex';
+    }
+    closeModalSpan.onclick = function() {
+        modal.style.display = 'none';
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
